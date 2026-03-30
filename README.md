@@ -1,75 +1,73 @@
-🚀 Project Overview
+# 🧾 AI KYC Verification System
 
-This system verifies user identity by analyzing documents and detecting authenticity. It helps organizations:
+## Overview
+Production-ready AI system to automate Know Your Customer (KYC) verification using computer vision and machine learning. Designed to improve verification accuracy, reduce manual effort, and prevent fraudulent activities in financial workflows.
 
-Automate KYC verification
-Reduce fraud and manual effort
-Improve onboarding speed
-Enhance compliance processes
+---
 
+## Features
+- Automated identity verification using AI/ML models  
+- Real-time document validation and fraud detection  
+- Web interface for interactive verification  
+- Scalable pipelines for high-volume onboarding  
 
-📂 Project Structure
-AI-KYC-Verification-System/
-│── app/                 # Streamlit web application
-│── dataset/             # Input datasets (ID images, etc.)
-│── src/                 # Core logic & ML pipeline
-│── requirements.txt     # Project dependencies
+---
 
+## Tech Stack
+- Python, OpenCV, Pandas, NumPy  
+- Machine Learning (Scikit-learn)  
+- Streamlit (Web UI)  
 
-🛠️ Tech Stack
-Python
-OpenCV → Image processing
-NumPy, Pandas → Data handling
-Scikit-learn / Deep Learning → Model building
-Streamlit → Web interface
+---
 
+## AI/ML Approach
+- Extracted features from ID documents using computer vision  
+- Built models for classification and verification  
+- Integrated automated checks for fraud detection  
+- Evaluated system using accuracy and real-time performance metrics  
 
-⚙️ Installation & Setup
+---
 
-1️⃣ Clone the Repository
-git clone https://github.com/Vinit3019/ai-kyc-verification.git
-cd ai-kyc-verification
+## Future Enhancements
+- Integrate LLM prompts to generate verification explanations  
+- Add RAG pipeline to cross-check external databases for fraud  
+- Deploy as API for enterprise fintech applications  
 
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-🧠 How It Works
-Upload identity document (Aadhaar, PAN, etc.)
-Preprocess image using OpenCV
-Extract relevant features
-Verify authenticity using ML model
-Display verification result
+---
 
-▶️ Run the Application
-streamlit run app/app.py
-
-Open in browser:
-
-http://localhost:8501
+## Use Case
+Automated KYC verification in lending, banking, and insurance platforms.
 
 
-📊 Features
 
-✔️ Document image processing
-✔️ AI-based identity verification
-✔️ Fraud detection capability
-✔️ Interactive web interface
-✔️ Fast and automated KYC flow
 
-📈 Future Improvements
-Add OCR (Tesseract) for text extraction
-Face matching (selfie vs ID)
-Integrate GenAI for explanation & validation
-Deploy on cloud (AWS/GCP/Azure)
-Add API integration for real-world usage
-🤝 Contributing
+Goal: Automate KYC verification with AI and computer vision.
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
+Architecture Components:
 
-📜 License
-
-This project is licensed under the MIT License.
-
-👨‍💻 Author
-
-Vinit S B
-GitHub: https://github.com/Vinit3019
+User Uploads ID / Documents
+        |
+        v
+   Web Interface (Streamlit / Flask)
+        |
+        v
+ Document Preprocessing Module
+ (Image Cleaning, OCR Extraction)
+        |
+        v
+   Feature Extraction Module
+ (Face Detection, Text Extraction, ML Features)
+        |
+        v
+   AI Verification Engine
+ - Classification Model (Valid / Invalid)
+ - Fraud Detection (Consistency Checks)
+        |
+        v
+   Result Module
+ - Verification Status
+ - Confidence Score
+        |
+        v
+  Database / Logs
+ (Store verification results and metrics)
